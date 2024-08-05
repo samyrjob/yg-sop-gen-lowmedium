@@ -25,13 +25,14 @@ import sys
 
 
 # Your Diffbot API token
-DIFFBOT_API_TOKEN = 'fe55e6257d2143b2ad59ba2cc83e3379'
-DIFFBOT_API_URL = 'https://api.diffbot.com/v3/article'
+
 
 PICKLE_FILE = 'scraped_data.pkl'
 
 
 load_dotenv()  # take environment variables from .env.
+DIFFBOT_API_TOKEN = os.getenv("DIFFBOT_API_TOKEN")
+DIFFBOT_API_URL = 'https://api.diffbot.com/v3/article'
 
 ai.api_key = os.getenv("OPENAI_API_KEY")
 #test
