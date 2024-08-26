@@ -67,7 +67,7 @@ logo_path = 'images/yeslogo2.jpg'
     
 
 async def generate_sop_version1(template_text, res_text,programme,university):
-    st.write(f"**Relevant article about Germany and {programme}**" + '\n\n')
+    
     
     cgpa_score = await retrieve_cgpa_score(res_text)
     
