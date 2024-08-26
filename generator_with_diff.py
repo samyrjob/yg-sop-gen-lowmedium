@@ -68,7 +68,7 @@ logo_path = 'images/yeslogo2.jpg'
 
 async def generate_sop_version1(template_text, res_text,programme,university):
     st.write(f"**Relevant article about Germany and {programme}**" + '\n\n')
-    st.write(germany_from_articles)
+    
     cgpa_score = await retrieve_cgpa_score(res_text)
     
     print("from the terminal : ", cgpa_score)
@@ -165,7 +165,7 @@ async def generate_sop_version1(template_text, res_text,programme,university):
 
             {"role": "user", "content": "Last Paragraph: A brief conclusion summarizing why you are the ideal applicant and show again your interest."},
             {"role": "user", "content": f"""
-            For the paragraph about Germany, you must mention the following points and add information from {germany_from_articles} into this paragraph :
+            For the paragraph about Germany, you must mention the following points and add information from  the news into this paragraph :
             
             You strictly have to include at least 5-6 good points for this paragraph.
             Point 1. Explain why you chose to apply in Germany
@@ -299,7 +299,7 @@ async def generate_sop_version1(template_text, res_text,programme,university):
 
             {"role": "user", "content": "Last Paragraph: A brief conclusion summarizing why you are the ideal applicant and show again your interest."},
             {"role": "user", "content": f"""
-            For the paragraph about Germany, you must mention the following points and add information from {germany_from_articles} into this paragraph :
+            For the paragraph about Germany, you must mention the following points and add information from into this paragraph :
             
             You strictly have to include at least 5-6 good points for this paragraph.
             Point 1. Explain why you chose to apply in Germany
@@ -430,7 +430,7 @@ async def generate_sop_version1(template_text, res_text,programme,university):
 
             {"role": "user", "content": "Last Paragraph: A brief conclusion summarizing why you are the ideal applicant and show again your interest."},
             {"role": "user", "content": f"""
-            For the paragraph about Germany, you must mention the following points and add information from {germany_from_articles} into this paragraph :
+            For the paragraph about Germany, you must mention the following points and add information from the news into this paragraph :
             
             You strictly have to include at least 5-6 good points for this paragraph.
             Point 1. Explain why you chose to apply in Germany
